@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M. Alfiansah | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-pct" id="loader-pct">0%</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-text">INITIALIZING PORTFOLIO...</div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- BG ELEMENTS -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="grid-bg"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">ALFIN<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">_HOME</a></li>
+        <li><a href="#profil">_PROFIL</a></li>
+        <li><a href="#projek">_PROJEK</a></li>
+        <li><a href="#kontak">_KONTAK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section id="home">
+    <video autoplay muted loop playsinline class="home-bg-video">
+      <source src="assets/Bg-home.mp4" type="video/mp4">
+    </video>
+    <div class="hud-corner hud-tl"></div>
+    <div class="hud-corner hud-tr"></div>
+    <div class="hud-corner hud-bl"></div>
+    <div class="hud-corner hud-br"></div>
+
+    <div class="home-content">
+      <div class="home-left">
+        <div class="glitch-wrap">
+          <div class="glitch-tag">[ PORTFOLIO // 2025 ]</div>
+        </div>
+        <h1 class="big-name">
+          <span class="first">M.</span>
+          <span class="last glitch" data-text="ALFIANSAH">ALFIANSAH</span>
+        </h1>
+        <p class="tagline">
+          <strong>Network Specialist</strong> ·
+          Builder of things on the web
+        </p>
+        <div class="cta-buttons">
+          <a href="#projek" class="btn btn-primary">VIEW PROJECTS</a>
+          <a href="#kontak" class="btn btn-ghost">GET IN TOUCH</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/alfiansah48" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/mhmmd_alfnsh/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- PROFILE FRAME dengan SLIDESHOW -->
+      <div class="home-right">
+        <div class="profile-frame">
+          <div class="photo-slider">
+            <img src="assets/dem.jpeg"  alt="Alfiansah 1" class="slide-img active">
+            <img src="assets/cuy.jpeg"  alt="Alfiansah 2" class="slide-img">
+            <img src="assets/fin.jpeg"  alt="Alfiansah 3" class="slide-img">
+            <img src="assets/hih.jpeg"  alt="Alfiansah 4" class="slide-img">
+          </div>
+          <div class="photo-scanline"></div>
+          <div class="slide-dots" id="slideDots"></div>
+          <div class="profile-hud">
+            [ ID:<span>Finn-48</span> · STATUS:<span>ONLINE</span> ]
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFIL -->
+  <section id="profil">
+    <div class="hud-corner hud-tl"></div>
+    <div class="hud-corner hud-tr"></div>
+
+    <div class="profil-content">
+      <div class="section-divider reveal">
+        <div class="section-number">01 //</div>
+        <h2 class="section-title">PROFIL <span>SAYA</span></h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="profil-grid">
+        <div class="profil-text reveal reveal-delay-1">
+          <p>
+            Halo! Nama saya <strong>Muhammad Alfiansah</strong>, 18 tahun, dipanggil <strong>Alfin</strong>.
+            Hobi saya main game dan badminton. Saya adalah lulusan
+            <strong>Teknik Komputer dan Jaringan (TKJ)</strong> dari SMK Negeri 1 Cihampelas.
+            Berfokus pada infrastruktur jaringan dan pengembangan sistem dalam konfigurasi Mikrotik (Winbox),
+            troubleshooting hardware, dan memiliki ketertarikan besar pada dunia pemrograman web dan IoT (Arduino).
+          </p>
+          <div class="highlight-box">
+            "Saya memiliki kemampuan dalam instalasi jaringan, troubleshooting perangkat keras &amp; lunak, serta konfigurasi Winbox, dan tentang IOT."
+          </div>
+          <div class="info-chips">
+            <div class="chip">Bandung, ID</div>
+            <div class="chip">18 tahun</div>
+            <div class="chip">SMK TKJ</div>
+            <div class="chip">Open to work</div>
+          </div>
+        </div>
+
+        <div class="skills-grid reveal reveal-delay-2">
+          <div class="skill-bar-wrap">
+            <div class="skill-header"><span class="name">Instalasi Jaringan</span><span class="pct">90%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--fill-scale:0.90; animation-duration:1.4s;"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-header"><span class="name">Winbox / MikroTik</span><span class="pct">85%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--fill-scale:0.85; animation-duration:1.5s;"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-header"><span class="name">HTML / Web Development</span><span class="pct">20%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--fill-scale:0.50; animation-duration:1.6s;"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-header"><span class="name">Troubleshooting Hardware</span><span class="pct">60%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--fill-scale:0.60; animation-duration:1.5s;"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-header"><span class="name">C++ / Arduino</span><span class="pct">85%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--fill-scale:0.85; animation-duration:1.7s;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJEK -->
+  <section id="projek">
+    <div class="projek-content">
+      <div class="section-divider reveal">
+        <div class="section-number">02 //</div>
+        <h2 class="section-title">MY <span>PROJECTS</span></h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="projek-grid">
+
+        <!-- PROJECT 01 -->
+        <a href="https://alfiansah48.github.io/VLAN/" target="_blank" class="projek-card reveal reveal-delay-1">
+          <div class="card-index">PROJECT_01</div>
+          <h3>VLAN</h3>
+          <p>Dokumentasi dan implementasi konfigurasi Virtual LAN berbasis web.</p>
+          <div class="card-tag">HTML</div>
+          <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <!-- PROJECT 02 -->
+        <a href="https://github.com/alfiansah48/c1" target="_blank" class="projek-card reveal reveal-delay-2">
+          <div class="card-index">PROJECT_02</div>
+          <h3>C1 – Mobilan</h3>
+          <p>Program simulasi mobil-mobilan yang dibangun menggunakan bahasa C++.</p>
+          <div class="card-tag">C++</div>
+          <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <!-- PROJECT 03 -->
+        <a href="https://github.com/alfiansah48/projekarduino" target="_blank" class="projek-card reveal reveal-delay-3">
+          <div class="card-index">PROJECT_03</div>
+          <h3>Arduino Project</h3>
+          <p>Proyek hardware dengan mikrokontroler Arduino untuk otomasi sederhana.</p>
+          <div class="card-tag">C++ · Arduino</div>
+          <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <!-- PROJECT 04 -->
+        <a href="https://alfiansah48.github.io/PW/" target="_blank" class="projek-card reveal reveal-delay-1">
+          <div class="card-index">PROJECT_04</div>
+          <h3>PW – First Web</h3>
+          <p>Project web pertama di GitHub — pembuatan halaman pemrograman web.</p>
+          <div class="card-tag">HTML</div>
+          <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <!-- PROJECT 05 -->
+        <a href="https://github.com/alfiansah48/kalkulator" target="_blank" class="projek-card reveal reveal-delay-2">
+          <div class="card-index">PROJECT_05</div>
+          <h3>Kalkulator</h3>
+          <p>Kalkulator sederhana berbasis web dengan tampilan yang bersih.</p>
+          <div class="card-tag">HTML</div>
+          <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <!-- PROJECT 06 -->
+        <a href="https://github.com/alfiansah48/listpr" target="_blank" class="projek-card reveal reveal-delay-3">
+          <div class="card-index">PROJECT_06</div>
+          <h3>List PR</h3>
+          <p>Aplikasi daftar PR sederhana untuk pencatatan tugas berbasis HTML.</p>
+          <div class="card-tag">HTML</div>
+          <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <!-- PROJECT 07 — py-arduino -->
+        <a href="https://github.com/alfiansah48/py-arduino" target="_blank" class="projek-card reveal reveal-delay-1">
+          <div class="card-index">PROJECT_07</div>
+          <h3>Py-Arduino</h3>
+          <p>Perkenalan diri interaktif sekaligus kontrol LED via Python + Arduino — ketika program berjalan, lampu LED menyala sebagai sinyal output hardware.</p>
+          <div class="card-tag">Python · Arduino</div>
+          <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <!-- PROJECT 08 — pelanet_foto -->
+        <a href="https://github.com/alfiansah48/pelanet_foto" target="_blank" class="projek-card reveal reveal-delay-2">
+          <div class="card-index">PROJECT_08</div>
+          <h3>Planet Foto</h3>
+          <p>Visualisasi planet Saturnus berbasis web yang menampilkan galeri foto — perpaduan astronomi dan personal fandom dalam satu halaman.</p>
+          <div class="card-tag">HTML · CSS</div>
+          <div class="card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak">
+    <video autoplay muted loop playsinline class="kontak-bg-video">
+      <source src="assets/project-bg.mp4" type="video/mp4">
+    </video>
+    <div class="hud-corner hud-tl"></div>
+    <div class="hud-corner hud-tr"></div>
+
+    <div class="kontak-content">
+      <div class="section-divider reveal" style="justify-content:center; flex-direction:column; gap:10px;">
+        <div class="section-number">03 //</div>
+        <h2 class="section-title">GET IN <span>TOUCH</span></h2>
+      </div>
+
+      <p class="kontak-intro reveal reveal-delay-1">
+        Ada proyek menarik? Mau kolaborasi? Atau sekadar say hi?<br>
+        Jangan ragu untuk menghubungi saya!
+      </p>
+
+      <div class="kontak-cards">
+        <div class="kontak-card reveal reveal-delay-2">
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+          <div class="label">EMAIL</div>
+          <div class="value">
+            <a href="mailto:muhammadalfiansahhh@gmail.com">muhammadalfiansahhh@gmail.com</a>
+          </div>
+        </div>
+        <div class="kontak-card reveal reveal-delay-3">
+          <span class="icon"><i class="fab fa-whatsapp"></i></span>
+          <div class="label">WHATSAPP</div>
+          <div class="value">
+            <a href="https://wa.me/6282000232426">0882 0002 32426</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="socials reveal reveal-delay-4" style="justify-content:center;">
+        <a href="https://github.com/alfiansah48" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/mhmmd_alfnsh/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">&copy; 2025 M.ALFIANSAH · ALL RIGHTS RESERVED</div>
+    <div class="footer-right">BUILT WITH ❤️ + CAFFEINE</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
